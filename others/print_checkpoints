@@ -1,0 +1,17 @@
+import torch
+
+# specify the path to the checkpoint file
+checkpoint_path = r'C:\Users\yvona\Documents\NPU_research\research\SSVS\checkpoints\CFD_128_123squee00cyclegan\1_net_D_A.pth'
+
+# load the checkpoint into a dictionary
+checkpoint_dict = torch.load(checkpoint_path)
+
+# print the keys of the dictionary
+print(checkpoint_dict.keys())
+# print(checkpoint_dict)
+print(checkpoint_dict.get('model.0.bias'))
+
+
+# Print the random seed used for training
+# print('Random seed used for training:', checkpoint_path['random_seed'])
+# print('Initial seed used for PyTorch:', torch.initial_seed())
