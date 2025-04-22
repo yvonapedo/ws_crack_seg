@@ -1,5 +1,4 @@
-# Copyright (c) 2022 Zhuang Intelligent Processing Lab. All rights reserved.
-# Written by Zizheng Pan 
+
 
 import math
 import torch
@@ -10,8 +9,6 @@ class HiLo(nn.Module):
     """
     HiLo Attention
 
-    Paper: Fast Vision Transformers with HiLo Attention
-    Link: https://arxiv.org/abs/2205.13213
     """
     def __init__(self, dim, num_heads=8, qkv_bias=False, qk_scale=None, attn_drop=0., proj_drop=0., window_size=2, alpha=0.5):
         super().__init__()
